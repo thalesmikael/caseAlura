@@ -1,0 +1,154 @@
+#recentCourses {
+    padding: 5% 0;
+}
+
+#navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50%;
+}
+
+.info {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 41px;
+    color: var(--colorTwo);
+}
+
+.controls {
+    display: flex;
+    margin-top: 10px;
+}
+
+#leftControl {
+    margin-right: 30%;
+}
+
+#leftControl > i {
+    font-size: 33px;
+    color: white;
+    background-color: var(--colorTwo);
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+#rightControl > i {
+    font-size: 33px;
+    color: white;
+    background-color: var(--colorTwo);
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+#cursesCarousel {
+    width: 1480px;
+    height: 400px;
+	margin: 30px auto;
+	overflow:hidden;
+}
+
+#courseList {
+    display: flex;
+    flex-direction: row;
+    gap: 23px;
+    width: 12000px;
+    transition: .9s all;
+}
+
+.course {
+    width: 335px;
+    height: 235px;
+
+    background-color: #FFFFFF;
+    border: 1px solid var(--colorFour);
+
+    border-radius: 5px;
+    box-shadow: 4px 4px 20px rgba(120, 135, 182, 0.1);
+
+	cursor: pointer;
+	transition: 0.4s all;
+}
+
+.course:hover {
+    margin-top: -5px;
+}
+
+.course > img {
+    margin-left: 20px;
+    margin-top: 28px;
+}
+
+.course > p {
+    margin: 23px 22px 33px 23px;
+    color: var(--colorTwo);
+}
+
+.course > hr {
+    height: 1px;
+    border-width: 0;
+    background-color: var(--colorFour);
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.course > i {
+    font-size: 25px;
+    margin: 15px 15px 15px 20px;
+    color: var(--colorThree);
+}
+
+.course > span {
+    display: flex;
+    margin: -36px 0 0 57px;
+    font-size: 16px;
+    color: var(--colorThree);
+}
+
+@media (max-width: 1499px) {
+    #cursesCarousel {
+        width: 1100px;
+    }
+
+    #navigation {
+        gap: 45%;
+    }
+}
+
+@media (max-width: 1100px) {
+    #cursesCarousel {
+        width: 755px;
+    }
+
+    #navigation {
+        gap: 30%;
+    }
+}
+
+@media (max-width: 755px) {
+    #cursesCarousel {
+        width: 395px;
+    }
+
+    .controls {
+        position: absolute;
+        justify-content: center;
+        margin-top: 680px;
+    }
+
+    #leftControl > i {
+        font-size: 60px;
+        border-radius: 35px;
+    }
+    
+    #rightControl > i {
+        font-size: 60px;
+        border-radius: 35px;
+    }
+}
+
+@media (max-width: 395px) {
+    #cursesCarousel {
+        width: 358px;
+    }
+}

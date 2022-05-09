@@ -1,0 +1,8 @@
+#header {
+    padding: 10px 12%;
+    background-color: var(--colorOne);
+}
+
+.headerLogo {
+    width: 95px;
+}
